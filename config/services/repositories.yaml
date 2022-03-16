@@ -1,0 +1,12 @@
+services:
+
+    _defaults:
+        autowire: false
+        autoconfigure: true
+        public: false
+
+    App\Domain\Repository\CategoryRepository:
+        alias: 'App\Infrastructure\Persistence\Doctrine\Repository\CategoryDoctrineRepository'
+    App\Infrastructure\Persistence\Doctrine\Repository\CategoryDoctrineRepository:
+        arguments:
+            $entityManager: '@doctrine.orm.entity_manager'

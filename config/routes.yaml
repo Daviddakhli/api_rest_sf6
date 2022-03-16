@@ -1,6 +1,26 @@
-controllers:
-    resource: ../src/Controller/
-    type: annotation
+create_category:
+    path: /api/v1/categories
+    controller: App\UI\Rest\Action\Category\CreateCategoryAction
+    methods: [ POST ]
+
+get_category:
+    path: /api/v1/categories/{categoryId}
+    controller: App\UI\Rest\Action\Category\GetCategoryAction
+    methods: [ GET ]
+    requirements:
+        categoryId: '\d+'
+
+create_product:
+    path: /api/v1/products
+    controller: App\UI\Rest\Action\Product\CreateProductAction
+    methods: [ POST ]
+
+get_products:
+    path: /api/v1/categories/{categoryId}/products
+    controller: App\UI\Rest\Action\Product\GetProductsAction
+    methods: [ GET ]
+    requirements:
+        categoryId: '\d+'
 
 kernel:
     resource: ../src/Kernel.php
