@@ -11,7 +11,7 @@ Made with PHP 8, Symfony 6, REST, DDD, SOLID and Hexagonal Architecture.
 > This project uses [Swagger](https://swagger.io/) for the API documentation.
 
 # Installation 
-* clone the project : `https://github.com/Daviddakhli/api_rest_sf6.git`
+* clone the project : `https://github.com/kdakhli/api_rest_sf6`
 
 * inside the project folder run : `composer install`
 
