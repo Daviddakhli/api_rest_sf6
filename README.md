@@ -1,6 +1,6 @@
 <h1 align="center"> Mini Site API </h1>
 
-## ✏️ About (In progress)
+## ✏️ About
 
 The purpose of this project is to provide a standard REST JSON-API that would allow a mobile application or a full frontend website to display a mini site.
 
